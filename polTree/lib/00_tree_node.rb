@@ -1,5 +1,3 @@
-require 'byebug'
-
 
 class PolyTreeNode
   attr_reader :parent, :children, :value
@@ -51,7 +49,7 @@ class PolyTreeNode
       return node1 if node1.value == target_value
       node1.children.each {|child| da_que << child}
     end
-    nil 
+    nil
   end
 
 
